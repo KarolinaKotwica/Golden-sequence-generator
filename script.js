@@ -25,7 +25,6 @@ const generuj = () => {
         fi += '<div>01 -> <span class="ratio">brak</span></div>';
         fi += '<div>02 -> <span class="ratio">' + (b/a).toFixed(30) + '</span></div>';
 
-        
 
         for( let i = 3; i <= ile; i++) {
             bufor = a + b;
@@ -39,7 +38,7 @@ const generuj = () => {
 
             fi += `<div>${bufor}${i} -> <span class="ratio">${(b/a).toFixed(30)}</span></div>`;            
         }
-        
+
         document.getElementById('ciag').innerHTML = ciag
         document.getElementById('fi').innerHTML = fi
     }
@@ -47,3 +46,39 @@ const generuj = () => {
 
 document.getElementById('generuj_ciag').addEventListener('click', generuj);
 
+var odd = document.getElementsByName('np');
+var ev = document.querySelectorAll('.ev');
+
+function color_odd() {
+    var color = this.value;
+    
+    let odd_words = document.getElementsByClassName('odd');
+
+    for(let word of odd_words) {
+        word.style.color = color;
+    }
+}
+
+function color_even(color) {
+    let even_words = document.querySelectorAll('.even');
+
+    for(let word of even_words) {
+        word.style.cssText = `color: ${color};`
+    }
+}
+
+function color_phi() {
+    
+}
+
+
+for (let i = 0; i < odd.length; i++) {
+    odd[i].addEventListener('click', color_odd);
+}
+ev.forEach(el => {
+    let color = el.value;
+
+    el.addEventListener('click', () => {
+        color_even(color)
+    });
+});
