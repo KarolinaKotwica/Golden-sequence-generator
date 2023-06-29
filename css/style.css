@@ -1,0 +1,140 @@
+body
+{
+	background-color: #2F3237;
+	color: #FFF;
+	font-size: 18px;
+	font-family: Verdana;
+	padding: 16px;
+	margin: 10px;
+}
+
+h1
+{
+	font-size: 38px;
+	font-weight: 400;
+	margin-top: 5px;
+	margin-bottom: 35px;
+	letter-spacing: 1px;
+	color: #FFC851;
+}
+
+.relative {
+	display: grid;
+	grid-template-columns: 0.5fr 1.2fr 1.3fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px; 
+}
+
+.newYellow {
+	color: #b87d00;
+}
+
+div
+{
+	margin: 2px 0;
+}
+
+.interface
+{
+	margin: 20px 0;
+}
+
+#generate {
+	width: 20em;
+	background-color: #ffc851;
+	color: #000;
+	margin-top: 1.3em;
+}
+
+input[type="button"] {
+	border: none;
+	outline: none;
+	padding: 7px;
+	border-radius: 7px 7px;
+	color: #fff;
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+}
+
+input[value='red'] {
+	background: rgb(195,19,19);
+	width: 4rem;
+}
+
+input[value='red']:hover {
+	background: rgb(138, 4, 4);
+}
+
+input[value='green'] {
+	background: green;
+	width: 4rem;
+}
+
+input[value='green']:hover {
+	background: rgb(1, 82, 1);
+}
+
+input[value='magenta'] {
+	background: rgb(116, 3, 116);
+	width: 5rem;
+}
+
+input[value='magenta']:hover {
+	background: rgb(105, 2, 105);
+}
+
+input[type='number'] {
+	background-color: #3A3D43;
+	border: none;
+	width: 3rem;
+	padding: 7px;
+	color: #FFC851;
+	margin: 25px;
+	border-radius: 7px 7px 7px 7px;
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.label:not(:first-of-type) {
+	margin-left: 2em;
+}
+
+#sequence, #fi
+{
+	display: inline-block;
+	margin-right: 50px;
+}
+
+#sequence {	grid-area: 1 / 1 / 2 / 2; }
+#fi { grid-area: 1 / 2 / 2 / 3; }
+#explanation {  
+	grid-area: 1 / 3 / 2 / 4;
+}
+
+.odd, .even {
+	color: #999;
+}
+
+.ratio {
+	color: #ffc851;
+}
+
+.blood { color: red; }
+
+.grass { color: green; }
+
+.war { color: magenta; }
+
+.backgroundColor {
+	background-color: #e4d1a8;
+}
