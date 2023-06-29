@@ -1,0 +1,40 @@
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 33px;
+        letter-spacing: 0;
+    }
+
+    label {
+        display: block;
+    }
+
+    input[type='button'] {
+        margin-top: 1rem;
+    }
+
+    .label:not(:first-of-type) {
+        margin-left: 0;
+    }
+
+    input[value='magenta']:after {
+        content: '';
+        white-space: pre;
+    }
+
+    .relative {
+        display: block;
+    }
+
+    .ratio {
+        word-wrap: anywhere;
+    }
+
+    .label {
+        display: block;
+    }
+} 
