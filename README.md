@@ -7,7 +7,7 @@
 
 <h2>Demo</h2>
 
-<p>ou can view a live demo of the project <a href='#'>here</a>.</p>
+<p>You can view a live demo of the project <a href='#'>here</a>.</p>
 
 <h2>Installation</h2>
 
