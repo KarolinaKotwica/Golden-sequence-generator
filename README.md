@@ -7,7 +7,7 @@
 
 <h2>Demo</h2>
 
-<p>You can view a live demo of the project <a href='#'>here</a>.</p>
+<p>You can view a live demo of the project <a href='https://karolinakotwica.github.io/Golden-sequence-generator/' target='_blank'>here</a>.</p>
 
 <h2>Installation</h2>
 
